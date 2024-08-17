@@ -1,0 +1,689 @@
+# tactiq.io free youtube transcript
+# Create Netflix dashboard with Tableau in 30 minutes
+# https://www.youtube.com/watch/BTArwS4ljC4
+
+00:00:00.080 hello guys and welcome to this tutorial
+00:00:01.680 about creating netflix dashboard you can
+00:00:04.640 find the link to download the file that
+00:00:06.720 we are going to use tutorial in the
+00:00:08.400 description so first we are going to
+00:00:10.080 import the csv file so we click on more
+00:00:12.960 and you look for the path where you have
+00:00:15.200 saved the netflix title as a file so you
+00:00:17.760 click on
+00:00:19.039 file open
+00:00:23.760 and here we have our data
+00:00:26.560 so
+00:00:27.359 we have 12 fields and more than 6k
+00:00:30.880 rows
+00:00:32.000 so each movie has show id we have the
+00:00:34.640 type
+00:00:35.520 it can be a movie or tv show we have the
+00:00:38.480 different titles as
+00:00:42.840 string we have different directors the
+00:00:46.079 cast
+00:00:48.239 so we have the date added so date added
+00:00:51.199 on netflix and and the release year we
+00:00:53.920 have the rating the duration so if it is
+00:00:56.719 a movie you have 94 minutes 90 minutes
+00:00:59.680 or if it is tv show then you have
+00:01:02.480 different seasons
+00:01:05.199 you have different categories and you
+00:01:06.880 have the description
+00:01:09.280 if we go to the worksheet
+00:01:10.960 so we have here the different
+00:01:13.760 fields okay so we have the dimensions
+00:01:15.840 and
+00:01:16.880 we have the latitude and longitude for
+00:01:19.439 the country as you see here we have the
+00:01:22.479 geographical role is defined as country
+00:01:25.600 so we have different countries
+00:01:27.840 and to start for example we can plot the
+00:01:30.799 different
+00:01:31.840 tv shows and movies added to netflix by
+00:01:35.119 date so if we put the date added in the
+00:01:38.400 columns
+00:01:41.520 and
+00:01:42.640 we put the
+00:01:45.119 so the show id in the rows
+00:01:48.640 and it will be account so measure
+00:01:51.840 it will be count distinct okay
+00:01:54.720 and we bring the
+00:01:58.159 the type in the colors
+00:02:02.159 okay so you can see here tv show and we
+00:02:05.520 have here
+00:02:07.119 the movies
+00:02:08.399 since as you have seen
+00:02:10.160 the year has null values we can filter
+00:02:12.319 that so we press on control key
+00:02:15.280 you drag
+00:02:16.800 the years in the filters
+00:02:18.640 and click years next
+00:02:21.120 and we omit null values apply
+00:02:24.720 okay
+00:02:28.000 so as you can see here we have the
+00:02:30.160 different we have the title movies and
+00:02:32.480 tv shows
+00:02:33.680 by years starting from 2008 until 2020
+00:02:38.319 we can convert that to an area chart
+00:02:42.959 and we can change the colors so as you
+00:02:45.200 know for netflix it is with
+00:02:48.080 shading or the background which is black
+00:02:50.959 and it is written in red so first we are
+00:02:54.319 going to omit that so hide the field
+00:02:57.599 we are going to edit the access
+00:03:01.040 okay
+00:03:02.000 so we remove the title
+00:03:05.040 we can
+00:03:06.400 define it here as an entire view
+00:03:09.280 so we can change the title we can name
+00:03:11.840 it for example
+00:03:13.760 total
+00:03:16.400 movies
+00:03:19.360 and tv shows
+00:03:22.640 by for example yes by year
+00:03:26.080 so defined in the middle
+00:03:28.239 put it in bold
+00:03:29.840 and we change the color so if you don't
+00:03:32.000 have the red you can click on more
+00:03:34.319 colors and you can define it in here
+00:03:37.360 so we put it in red
+00:03:39.200 okay
+00:03:40.879 we are going to change the background so
+00:03:42.799 click on
+00:03:43.840 you right click on the worksheet format
+00:03:48.080 and here you go to sharing so the
+00:03:50.080 worksheet it will be in black
+00:03:52.560 okay
+00:03:53.920 so the uh
+00:03:56.000 we're going to remove
+00:03:58.080 the gridlines so you go to rows
+00:04:00.640 gridlines and you click on none
+00:04:03.519 okay
+00:04:04.879 and for the
+00:04:07.519 for the text we are going to put them in
+00:04:11.360 in
+00:04:13.519 in white
+00:04:14.400 okay and put them in bold like that
+00:04:18.639 we can also change the colors of the tv
+00:04:21.358 shows and the the movie so we click on
+00:04:24.080 color edit color and we put it in red so
+00:04:28.080 click on red
+00:04:29.759 for the movie we put it in dark red and
+00:04:32.160 for tv show in light red apply okay
+00:04:36.880 so
+00:04:37.840 we have here the and now if we don't
+00:04:40.639 want to see the legend so we can click
+00:04:43.680 on height card
+00:04:45.199 and we click on or press on control key
+00:04:48.960 and
+00:04:50.080 click on type put it in label
+00:04:53.680 so here we do have the tv movies the
+00:04:56.240 total movies and the tv shows by years
+00:04:59.120 okay
+00:05:00.400 apply okay
+00:05:02.320 so we can rename the worksheet we call
+00:05:04.880 it
+00:05:06.000 total
+00:05:07.440 movies
+00:05:08.800 and tv shows
+00:05:10.479 by year okay
+00:05:13.919 tv shows by years
+00:05:18.479 okay
+00:05:19.680 and then we are going to create
+00:05:22.400 the new worksheet okay
+00:05:25.199 and for example
+00:05:26.800 we want to create a map okay
+00:05:30.400 that
+00:05:31.440 define each country by color and the
+00:05:34.320 darker is the color the more movies that
+00:05:37.680 the this country has released okay
+00:05:40.720 so we double click on country
+00:05:44.880 we'll have all the defined countries we
+00:05:46.800 change automatic to fill the map okay
+00:05:50.400 for the announce we click on filter data
+00:05:54.080 then for the title we can change it to
+00:05:58.080 total movies okay
+00:06:00.560 so we're right
+00:06:03.360 total movies
+00:06:06.560 and tv shows okay
+00:06:10.160 by
+00:06:10.960 country
+00:06:13.840 put it in the middle
+00:06:16.400 in bold and we put it in red apply okay
+00:06:21.440 we change the background of
+00:06:23.759 the worksheet so we right click on the
+00:06:26.319 worksheet format
+00:06:28.080 and we go to sharing
+00:06:29.919 put it in black
+00:06:32.240 we do the same thing for the map
+00:06:34.479 so we click on map
+00:06:37.280 background maps and we click on dark
+00:06:40.720 okay
+00:06:41.919 for the color of the map we can change
+00:06:44.080 it to red
+00:06:46.800 or we can change it later on when we add
+00:06:50.479 the uh the count of the shell id so we
+00:06:53.599 click and drop show id into
+00:06:57.759 show id into colors okay
+00:07:01.199 and when we put
+00:07:08.160 we are going to click on measure
+00:07:10.880 count distinct okay
+00:07:13.440 and we change the color into
+00:07:16.800 red okay edit colors we're going to
+00:07:19.520 change it to red
+00:07:21.599 apply okay
+00:07:24.000 so as you can see here
+00:07:25.680 we have
+00:07:27.120 the count or the total movies and tv
+00:07:30.479 shows by country
+00:07:32.240 as you can see here
+00:07:33.759 the united states has the highest value
+00:07:36.240 and the remaining they have 50
+00:07:39.199 uh
+00:07:40.000 up to the the
+00:07:42.000 list value which is one okay
+00:07:44.639 so we can rename that total movies
+00:07:50.160 and tv shows
+00:07:52.800 by country
+00:07:54.240 okay
+00:07:57.520 we can create another worksheet that we
+00:08:00.560 will in which we are we are going to uh
+00:08:03.520 select the the top 10 journals okay the
+00:08:05.919 top 10 types of movies okay for example
+00:08:09.520 we have drama we have romantic movies
+00:08:11.680 and we have for example horror movies
+00:08:14.560 so we're going to click on top 10.
+00:08:22.080 okay
+00:08:23.759 so i'm going to select the different
+00:08:29.039 listed in okay
+00:08:33.599 and here we are going to show
+00:08:35.599 to put the same thing show id in text
+00:08:39.120 and we put the the measure which is the
+00:08:41.919 count distinct okay
+00:08:44.399 we're going to order that
+00:08:46.880 and we select the top ten so we click in
+00:08:49.760 here
+00:08:51.200 filter
+00:08:53.120 top by field so we have the top 10 by
+00:08:57.279 the show the count distinct of show id
+00:09:00.080 so you click on apply okay so here we do
+00:09:02.959 have the
+00:09:04.399 the top 10 okay
+00:09:06.399 we can
+00:09:07.440 drag and drop the count id into the
+00:09:09.600 columns okay
+00:09:11.360 so we will have the uh the horizontal
+00:09:14.640 bars
+00:09:16.000 we hide the field for rows
+00:09:18.640 we do the same thing we edit the axis
+00:09:22.000 and we remove the title okay
+00:09:29.279 we can
+00:09:30.880 give some space in here
+00:09:33.519 so we can change the title put it in the
+00:09:36.000 middle in bold and we put it in red
+00:09:39.120 apply okay
+00:09:41.600 we do the same thing for colors in here
+00:09:43.200 we put them in red
+00:09:45.519 and we change the background so the
+00:09:47.839 format
+00:09:49.680 worksheet
+00:09:50.959 okay
+00:09:54.000 we have the shading worksheet and it
+00:09:56.000 will be in black
+00:09:57.839 we do the same thing
+00:09:59.360 for
+00:10:01.120 the text so we change it into white bolt
+00:10:05.360 and we are going to remove
+00:10:07.920 the uh
+00:10:09.680 the columns grid lines okay
+00:10:12.000 so we we go in here
+00:10:14.160 for lines grid lines in the columns and
+00:10:17.040 we put it to none okay so here we have
+00:10:20.079 the top 10
+00:10:21.519 and we can add for example uh we we
+00:10:24.480 press on control key
+00:10:26.320 and we drag the count into label okay so
+00:10:30.160 here we have the different values
+00:10:32.320 depending on
+00:10:33.760 each type okay so we have the
+00:10:35.760 commentaries with two
+00:10:37.720 299 we have standby comedy etc
+00:10:42.399 now for example we can add the different
+00:10:45.600 so as we have seen here we have two
+00:10:48.240 types so we can create a chart that
+00:10:52.240 give us the percentage and
+00:10:55.279 the total of
+00:10:57.519 movies or tv shows depending on the type
+00:11:00.560 okay
+00:11:01.680 so we call it
+00:11:03.360 movies
+00:11:05.360 and tv shows
+00:11:09.360 we call it distribution okay
+00:11:14.160 so same thing we we put the type
+00:11:17.600 in the rows for example okay
+00:11:20.399 and we put the shell id in text
+00:11:23.600 we put the count
+00:11:25.040 distinct okay
+00:11:26.720 and it give us the
+00:11:29.279 the value but if you want you can change
+00:11:31.440 it to it
+00:11:32.480 you can change it to visualization for
+00:11:34.160 example
+00:11:35.120 we can change change it to
+00:11:37.519 a highlight table for example stacked
+00:11:39.920 bar
+00:11:40.800 or for example packed bubbles okay as
+00:11:43.920 you can see here
+00:11:45.680 it give us much more information than
+00:11:49.360 table okay
+00:11:52.000 we can add for example
+00:11:54.320 we press on control key
+00:11:56.639 and we
+00:11:58.000 put the label so the person the total
+00:12:01.200 in the uh
+00:12:03.920 inside the bubbles we can also add the
+00:12:06.480 percentage if you want to
+00:12:08.480 so you press on control key
+00:12:11.279 you put it in detail
+00:12:13.279 okay
+00:12:14.480 and you can change it to
+00:12:17.440 quick table calculation okay
+00:12:22.000 so we have quick table calculation
+00:12:25.200 and we select percent of total
+00:12:28.560 okay
+00:12:29.680 we convert it to
+00:12:31.440 label and here we have the percentage
+00:12:34.320 okay we drag it to the down
+00:12:37.200 like that okay so we have for the movies
+00:12:39.839 we have
+00:12:41.240 4269 which represents
+00:12:44.040 68.42 percent of the total okay
+00:12:49.440 we can do the same thing we can change
+00:12:50.959 the title okay
+00:12:54.720 we put it in bold and
+00:12:56.800 in
+00:12:57.519 red
+00:12:58.880 apply
+00:13:02.079 put it in red apply okay
+00:13:06.240 we can hide the card and we select the
+00:13:10.240 entire view
+00:13:12.639 we can also format that okay so we
+00:13:15.680 select
+00:13:22.240 the worksheet okay
+00:13:24.480 the sharing worksheet it will be in
+00:13:27.200 black
+00:13:28.800 and here we do have the total movies and
+00:13:31.360 tv shows by with the percentage and the
+00:13:34.800 exact value
+00:13:36.560 okay so now we can add another worksheet
+00:13:39.920 for example for
+00:13:41.839 the
+00:13:42.800 ratings okay for example we call it
+00:13:45.199 ratings okay
+00:13:47.519 and we put the ratings in the column
+00:13:52.240 okay
+00:13:54.240 we put it in the entire view
+00:13:58.079 and for example we put the show id in
+00:14:00.240 the rows
+00:14:04.079 count id
+00:14:06.639 count distinct sorry
+00:14:09.519 so we order that
+00:14:12.399 and as you can see here we have tvma
+00:14:15.199 which is in in the first position and we
+00:14:17.519 have tv 14 tv pg etc
+00:14:20.720 so we can add the count in into the
+00:14:23.680 labels
+00:14:26.720 sorry so we press ctrl key
+00:14:29.360 count into the labels
+00:14:32.320 then we change the color into red
+00:14:36.160 we can format that so we put the
+00:14:39.199 worksheet in black
+00:14:42.720 we put the grid lines of the rows into
+00:14:45.680 none
+00:14:47.519 and we change the text
+00:14:49.760 into
+00:14:50.040 [Music]
+00:14:51.199 white and bold okay so we edit the axis
+00:14:56.800 remove it
+00:14:58.720 we move the title
+00:15:00.560 we do the same thing for the rating hide
+00:15:02.320 the field
+00:15:03.839 and we put
+00:15:08.000 so
+00:15:08.880 uh
+00:15:09.680 rating we put it in bold
+00:15:12.800 in the middle and in red okay
+00:15:15.760 apply okay
+00:15:17.519 so this is for the ratings
+00:15:20.560 and now with this five first worksheets
+00:15:23.600 we have covered
+00:15:25.440 the the geographical
+00:15:27.600 data type which is
+00:15:29.040 in our case countries
+00:15:30.800 covered the total movies and tv shows
+00:15:34.000 added by date
+00:15:36.160 we have covered the
+00:15:38.399 genre so we have the top 10
+00:15:41.759 by genera
+00:15:42.959 and we have the ratings
+00:15:45.120 and of course we have the total of
+00:15:46.720 movies and tv shows with its
+00:15:49.519 with their percentage now for the
+00:15:51.360 remaining fields for example we can
+00:15:55.519 we can select a movie and for example we
+00:15:58.720 can see its description so for example
+00:16:01.680 we first select the type okay filter for
+00:16:04.639 example a movie okay apply okay
+00:16:08.480 so we're going to show the filter
+00:16:10.800 type
+00:16:11.839 we remove all
+00:16:13.680 and we put single value drop down
+00:16:17.120 then once we select the type we select
+00:16:19.600 the title okay so show filter
+00:16:24.720 so we have we are going to remove all
+00:16:28.480 and we are going to
+00:16:31.199 select single value drop down
+00:16:35.040 what we are going to do now for example
+00:16:36.560 when we select the type movie
+00:16:39.199 if we don't want to see the
+00:16:41.360 titles of tv shows in here we can change
+00:16:44.320 that on to only relevant values okay so
+00:16:48.320 you will have only the titles of the
+00:16:50.480 movies
+00:16:51.519 the same thing when you select tv shows
+00:16:53.600 you will not find the titles of the
+00:16:55.519 movies you will only find titles of the
+00:16:57.839 tv shows okay
+00:16:59.759 what you want to
+00:17:01.040 find is the description okay we want to
+00:17:03.199 display description and we put it in the
+00:17:05.520 entire view
+00:17:06.880 so
+00:17:07.760 we change the title into description
+00:17:14.240 you put it in the middle
+00:17:16.480 and
+00:17:17.520 put it in bold
+00:17:19.439 in red
+00:17:21.520 okay we do the same thing for the format
+00:17:26.559 sharing
+00:17:27.760 and we put it in black
+00:17:30.880 so for the description for the text
+00:17:35.120 we're going to put it in
+00:17:36.960 white
+00:17:38.559 and we put the text into
+00:17:40.880 in the middle okay
+00:17:42.640 header the same thing
+00:17:44.880 in the center
+00:17:46.400 okay this is for the description as you
+00:17:48.799 can see here we can also
+00:17:51.120 change the uh
+00:17:53.120 format filters okay so the font which is
+00:17:56.000 going to be
+00:17:57.200 in
+00:17:58.960 the shading it is in black and the font
+00:18:01.760 it is in
+00:18:03.280 white
+00:18:04.160 okay
+00:18:07.840 so each movie or htv show has
+00:18:09.840 description
+00:18:11.200 has duration so if it is a movie it will
+00:18:13.760 be in minutes if it is a tv show it will
+00:18:15.679 be in seasons it has rating
+00:18:18.559 it has released here
+00:18:20.720 okay
+00:18:21.600 so what we are going to do is that we
+00:18:23.360 are going to rename that
+00:18:26.840 description
+00:18:28.720 apply okay
+00:18:30.000 so we call it description
+00:18:36.559 okay
+00:18:37.360 and we're going to duplicate that so we
+00:18:39.520 right click duplicate
+00:18:41.360 and for example we change it to date
+00:18:43.440 edit okay so date
+00:18:48.240 added
+00:18:50.000 we select ok
+00:18:52.160 we change it here to date
+00:18:55.600 added okay apply
+00:18:58.480 we remove the description
+00:19:00.559 and we put date added okay
+00:19:04.000 so we have 2019
+00:19:06.480 we do the same thing for the duration so
+00:19:08.480 we duplicate
+00:19:11.919 we change it to
+00:19:13.919 duration okay
+00:19:18.000 apply okay we change it to
+00:19:22.840 duration and we change the text
+00:19:26.559 into duration okay
+00:19:28.640 so since it is tv show it will be two
+00:19:31.120 seasons
+00:19:32.480 so we have also the writing we do the
+00:19:34.799 same thing
+00:19:37.120 duplicate we call it individual rating
+00:19:40.480 since we have
+00:19:42.799 or only writing okay
+00:19:46.080 we change the title into rating
+00:19:50.640 apply okay
+00:19:52.640 so we replace it by writing
+00:19:57.679 for example if it is a movie
+00:20:01.039 tv 14
+00:20:03.280 we have the release here okay
+00:20:08.320 duplicate
+00:20:11.280 we have
+00:20:12.799 release
+00:20:15.840 here okay
+00:20:19.120 and we change it here into
+00:20:21.039 release here
+00:20:30.080 apply okay
+00:20:31.760 so we have here
+00:20:33.600 release here
+00:20:36.000 and finally we are going to put it put
+00:20:38.960 the general okay
+00:20:42.000 oh sorry
+00:20:43.360 so
+00:20:45.280 we duplicate that
+00:20:53.280 so we change it here
+00:20:58.480 apply ok
+00:21:00.640 and we are going to change it here into
+00:21:02.880 listed in
+00:21:04.480 okay so we have to select that
+00:21:08.080 the
+00:21:10.240 this filter okay
+00:21:12.159 applied to worksheets
+00:21:13.919 selected worksheets so we select the
+00:21:16.080 last five so we have general release
+00:21:18.400 here rating
+00:21:19.919 duration and date edit okay
+00:21:24.559 okay so we do the same thing for the
+00:21:26.799 title
+00:21:28.480 apply to worksheet selected worksheets
+00:21:32.799 genera release year rating duration and
+00:21:36.000 date so when we put them in the
+00:21:38.159 dashboard we need only to put one filter
+00:21:41.440 and this filter is going to be applied
+00:21:43.760 to the last
+00:21:46.000 five worksheets okay whereas for the
+00:21:48.799 first five that we have created so
+00:21:51.200 total movies total movies top 10 genre
+00:21:54.799 movies tv and ratings this is
+00:21:57.520 as you know as a general description of
+00:22:00.159 our
+00:22:01.039 data set okay
+00:22:02.960 okay so now we are going to create our
+00:22:05.039 dashboard okay so call it
+00:22:07.760 netflix
+00:22:10.840 okay we can
+00:22:13.840 rearrange the
+00:22:15.600 dimensions for example
+00:22:19.200 12
+00:22:20.240 or i put it into
+00:22:25.360 okay
+00:22:30.320 maybe
+00:22:32.960 1600
+00:22:37.840 okay
+00:22:43.760 okay very good and we are going to use
+00:22:46.880 uh
+00:22:47.679 the standard we are not going to use the
+00:22:49.600 floating okay
+00:22:51.120 as you can see here the tilt or the
+00:22:52.640 floating
+00:22:54.480 and we start by adding
+00:22:57.520 the first one which is
+00:23:00.559 the total movies and tv shows by year
+00:23:03.360 okay
+00:23:05.039 we are going to format the dashboard
+00:23:07.200 into black as you can see here behind
+00:23:08.960 the title it is in white so we put it in
+00:23:11.120 black
+00:23:12.000 okay
+00:23:14.080 very nice
+00:23:16.640 then we are going to add the
+00:23:20.080 top 10
+00:23:21.679 by genre okay
+00:23:24.559 we are going to add the map
+00:23:28.240 okay
+00:23:30.960 like that
+00:23:32.960 we are going to add the total okay the
+00:23:36.799 sum
+00:23:38.640 and we have the ratings okay
+00:23:44.559 so
+00:23:47.039 now since we do have everything
+00:23:51.039 going to increase the
+00:23:53.200 height okay we put it 900 okay
+00:23:59.600 we are going to
+00:24:00.960 rotate the label
+00:24:02.840 okay it is better like that
+00:24:08.080 we have the map we can change it like
+00:24:11.919 this
+00:24:12.799 okay
+00:24:14.640 so that you will have better
+00:24:17.279 view for the ratings
+00:24:20.400 and we can decrease the height for the
+00:24:22.720 genera and the tv shows by years okay
+00:24:27.919 we can convert
+00:24:30.240 okay so we don't show the title since it
+00:24:32.559 is about the map
+00:24:34.080 we can convert it to florence okay
+00:24:37.520 and we can put it inside the map okay
+00:24:42.000 like that
+00:24:43.679 so
+00:24:45.120 we have
+00:24:46.960 our
+00:24:48.400 general analysis of our dashboard okay
+00:24:50.880 so increase the height a little bit
+00:24:53.679 to 1000
+00:24:57.120 now i'm going to add
+00:24:59.200 the different descriptions of
+00:25:02.400 or different characteristics of
+00:25:03.840 individual
+00:25:05.520 movie okay so we have here
+00:25:10.559 description
+00:25:12.840 okay which is going to be like that
+00:25:17.120 then we have the
+00:25:20.000 date added okay
+00:25:23.600 date added
+00:25:25.679 we do have the duration
+00:25:28.400 okay
+00:25:30.799 we have the
+00:25:33.279 rating okay
+00:25:36.480 the release year
+00:25:40.080 and the general
+00:25:44.000 okay
+00:25:45.360 so now we do have all the worksheets
+00:25:48.240 inside our dashboard
+00:25:50.640 we can change
+00:25:52.799 or put our type in
+00:25:54.840 here
+00:25:56.720 okay we can put the rating
+00:26:00.000 in here
+00:26:03.360 you put the same thing the title in here
+00:26:07.360 all right
+00:26:09.520 so what you are going to do is we are
+00:26:12.159 going to decrease
+00:26:15.279 the height of
+00:26:17.520 okay
+00:26:19.760 okay
+00:26:22.799 and we are going to change the the title
+00:26:25.200 so we put them in 10
+00:26:27.279 apply
+00:26:28.320 okay
+00:26:30.159 same thing for duration
+00:26:32.480 we'll put all the titles intent so that
+00:26:34.720 we have
+00:26:35.840 we will have a clear you know
+00:26:40.240 view
+00:26:42.720 and analysis
+00:26:45.600 okay
+00:26:46.559 very nice
+00:26:48.480 so the rule is here and
+00:26:51.520 the added year we put them
+00:26:54.080 we can put them side by side so apply
+00:26:57.120 okay
+00:26:59.039 that added we put them in
+00:27:02.080 10
+00:27:02.880 apply okay
+00:27:05.440 so we put them in here
+00:27:10.640 all right now for genera
+00:27:13.440 we have put it here
+00:27:16.640 very nice
+00:27:20.240 we can change or format our turtle
+00:27:23.360 filters
+00:27:24.559 so it will be in the center
+00:27:29.360 okay like that and for the type still
+00:27:32.880 put it
+00:27:34.480 in
+00:27:35.200 red okay
+00:27:38.080 okay
+00:27:39.520 same thing for the title
+00:27:42.720 we
+00:27:43.840 edit the title and we put it in red
+00:27:49.600 okay
+00:27:51.279 okay so now we have
+00:27:54.159 our formation
+00:27:55.600 for each movie for example we select
+00:27:58.640 movie
+00:27:59.679 okay
+00:28:00.559 and select movie we have the rating the
+00:28:03.200 duration release year
+00:28:05.360 that added description and the genera
+00:28:08.080 okay and here we have our analysis or
+00:28:11.279 our general analysis of our data set
+00:28:14.399 okay so we have the rating we have the
+00:28:16.880 total movies by countries
+00:28:19.679 and we can put it in here
+00:28:22.159 okay
+00:28:27.039 we have
+00:28:28.159 the sum of movies and tv shows we have
+00:28:31.520 total movies and tv shows by years and
+00:28:34.320 we have top 10 genre okay so here for
+00:28:36.960 example you can leave some space
+00:28:39.360 so that you will have a clear
+00:28:42.559 view
+00:28:43.760 okay
+00:28:44.720 and what we can do for example we can
+00:28:46.960 add the netflix logo in our dashboard so
+00:28:50.960 we can add the netflix image okay so we
+00:28:54.000 click on image
+00:29:00.720 so you can download netflix image as i
+00:29:02.720 can as i did in here so you can download
+00:29:05.440 it on google and double click on image
+00:29:08.960 you can add your
+00:29:10.960 netflix image okay
+00:29:13.039 and you can edit so fit image and center
+00:29:15.679 the image
+00:29:16.880 and you can put it
+00:29:18.480 at the beginning for example put it in
+00:29:20.799 here okay
+00:29:23.440 so here we have our final dashboard okay
+00:29:27.360 that describes for us different types
+00:29:30.000 and different titles of movies
+00:29:32.320 by country by ratings and by year
+00:29:37.120 if you want to export that as an image
+00:29:39.120 so you can click on dashboard
+00:29:43.039 export and you can find your
+00:29:46.240 final dashboard in here
+00:29:49.760 so that's it for the netflix dashboard i
+00:29:52.480 hope that you have learned new things
+00:29:54.399 thanks for watching and see you in the
+00:29:56.000 next tutorial
