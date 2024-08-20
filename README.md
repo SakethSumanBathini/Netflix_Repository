@@ -1,4 +1,4 @@
-![Data Source](https://github.com/user-attachments/assets/b80a130c-1581-46b1-a5f7-719eaf36ec99)# **Netflix Data Analysis Dashboard - Tableau**
+
 
 ## **1. Overview**
 
