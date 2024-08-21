@@ -16,32 +16,27 @@ The Netflix Data Analysis Dashboard utilizes several types of visualizations, ea
 ### **Types of Visualizations**:
 
 - **Area Chart: Growth of Movies and TV Shows Over Time**:
-  - **Purpose**: This area chart tracks the increase in the number of movies and TV shows added to Netflix from 2008 to 2021. It highlights the rapid expansion of content, particularly after 2015, showcasing Netflix's strategy to scale up its library.
-  - **Insights**: This visualization helps stakeholders understand the timeline of content growth and plan for future content acquisitions based on historical trends.
+  - This area chart tracks the increase in the number of movies and TV shows added to Netflix from 2008 to 2021. It highlights the rapid expansion of content, particularly after 2015, showcasing Netflix's strategy to scale up its library. This visualization helps stakeholders understand the timeline of content growth, allowing them to plan future content acquisitions and strategies based on historical trends.
 
   ![Area chart for Total movies and tv shows by years](https://github.com/user-attachments/assets/ee82073c-0fd6-47dc-92b1-283e08f8a849)
 
 - **Map Visualization: Global Distribution of Content**:
-  - **Purpose**: This map visualization displays the geographical distribution of Netflix content, highlighting regions with high content volumes. It provides insights into where Netflix's content is most prolific, with the USA standing out as a significant contributor.
-  - **Insights**: Understanding the geographical spread of content helps Netflix focus on content production and marketing efforts in key regions.
+  - This map visualization displays the geographical distribution of Netflix content, highlighting regions with high content volumes. It provides insights into where Netflix's content is most prolific, with the USA standing out as a significant contributor. Understanding the geographical spread of content helps Netflix focus on content production and marketing efforts in key regions.
 
   ![Map chart for total movies and tv shows](https://github.com/user-attachments/assets/17140a3d-8e2c-4168-a30e-e8bcaf57b932)
 
 - **Top 10 Genres**:
-  - **Purpose**: This bar chart ranks the most popular genres on Netflix, helping stakeholders understand content trends. The visualization shows which genres are dominating the platform, with ‘Drama’ and ‘Documentaries’ being the top contenders.
-  - **Insights**: This chart helps in identifying which genres are most appealing to Netflix’s audience, guiding future content acquisition and production strategies.
+  - This bar chart ranks the most popular genres on Netflix, showing which genres are dominating the platform, with ‘Drama’ and ‘Documentaries’ being the top contenders. This chart helps stakeholders identify which genres are most appealing to Netflix’s audience, guiding future content acquisition and production strategies.
 
   ![Bar chart for Top 10 genre](https://github.com/user-attachments/assets/bbfe05dd-e18f-4d19-8b91-29ada64cc783)
 
 - **Ratings Distribution**:
-  - **Purpose**: This bar chart analyzes the spread of content ratings on Netflix, focusing on user preferences and content targeting. It helps in understanding the distribution of content based on ratings such as TV-MA, TV-14, PG-13, etc.
-  - **Insights**: This visualization aids in content classification and helps in tailoring recommendations to different audience segments based on rating preferences.
+  - This bar chart analyzes the spread of content ratings on Netflix, focusing on user preferences and content targeting. It provides an understanding of how content is classified based on ratings such as TV-MA, TV-14, PG-13, etc. This visualization aids in tailoring recommendations to different audience segments and helps in content classification.
 
   ![Bar chart for Ratings](https://github.com/user-attachments/assets/994f83f1-62dd-4fe0-9c6f-d0971823bfbb)
 
 - **Content Distribution: Movies vs TV Shows**:
-  - **Purpose**: This circle chart compares the proportion of movies to TV shows in Netflix's catalog. It highlights that movies constitute nearly 70% of the total content, reflecting Netflix’s emphasis on movie content.
-  - **Insights**: Understanding the balance between movies and TV shows helps in curating a content strategy that aligns with audience demand.
+  - This circle chart compares the proportion of movies to TV shows in Netflix's catalog, highlighting that movies constitute nearly 70% of the total content. This reflects Netflix’s emphasis on movie content and helps in curating a content strategy that aligns with audience demand.
 
   ![Circle chart for movies and tv shows distribution](https://github.com/user-attachments/assets/96371464-9af9-4924-993e-7308b77835fd)
 
@@ -72,6 +67,7 @@ The Netflix Data Analysis Dashboard project has achieved several significant out
 ## **5. Data Set**
 
 The dataset used in this project is essential for analyzing Netflix's content catalog. It includes information on Netflix titles and their attributes, such as show ID, type, title, director, cast, country, date added, release year, rating, duration, and genres.
+
 ![Data Source](https://github.com/user-attachments/assets/7898181b-62e4-4102-8292-fa02f38a25f2)
 
 ### **Data Characteristics**:
